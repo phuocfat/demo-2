@@ -117,7 +117,7 @@ class Sort {
           let j = i;
           while ((j > 0) && (this.data[j].value < this.data[j-1].value)) {
             let title1 = document.querySelector('.condition strong');
-            title1.innerHTML = Math.floor(this.data[j].value * 1) + ' < '  + Math.floor(this.data[j + 1].value * 1);
+            title1.innerHTML = Math.floor(this.data[j].value * 1) + ' < '  + Math.floor(this.data[j -1].value * 1);
             title1.style.fontSize = '1.3rem';
             title1.style.fontFamily = 'Open Sans, sans-serif';
 
